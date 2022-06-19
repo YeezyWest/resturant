@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="text-gray-600">
+ 
+    <div class="grid md:grid-cols-3"><!--Content wrapper-->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center"> 
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/">MrWest</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1 ">
+                        <a class="px-4 flex justify-end border-r-4 border-primary" href="#"><span>Home</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                              </svg></a>
+                    </li>
+                    <li class="py-1">
+                        <a class="px-4 flex justify-end border-r-4 border-white" href="#"><span>About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                              </svg></a>
+                    </li>
+                    <li class="py-1">
+                        <a class="px-4 flex justify-end border-r-4 border-white" href="#"><span>Contact</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 8l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" />
+                              </svg></a>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!--End nav here-->
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in-out duration-500">log in</a>
+                <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in-out duration-500">Sign up</a>
+            </div>
+
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold">Recipe</h2>
+                <h3 class="text-2xl font-semibold">For Food</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!--Cards goes here-->
+                    <div class="card  hover:shadow-lg transform hover:scale-125 hover:opacity-100 transition ease-in-out duration-300">
+                        <img class="w-full h-32 sm:h-48 object-cover" src="./images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" width="300" height="300" alt="">
+                        <div class="m-4">
+                            <span class="font-bold">anna-tukhfatullina</span>
+                            <span class="block text-gray-500 text-sm">Recipe by yeezy</span>
+                        </div>
+                        <div class="badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            <span> 25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg transform hover:scale-125 hover:opacity-100 transition ease-in-out duration-300">
+                        <img class="w-full h-32 sm:h-48 object-cover" src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg " width="300" height="300" alt="">
+                        <div class="m-4">
+                            <span class="font-bold">anna-pelzer</span>
+                            <span class="block text-gray-500 text-sm">Recipe by yeezy</span>
+                        </div>
+                        <div class="badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            <span> 25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg transform hover:scale-125 hover:opacity-100 transition ease-in-out duration-300">
+                        <img class="w-full h-32 sm:h-48 object-cover" src="./images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg" width="300" height="300" alt="">
+                        <div class="m-4">
+                            <span class="font-bold">eiliv-sonas-aceron</span>
+                            <span class="block text-gray-500 text-sm">Recipe by yeezy</span>
+                        </div>
+                        <div class="badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            <span> 25 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h4>
+
+                <div class="mt-8">
+                    <!--cards goes here-->
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:opacity-50 transition ease-out duration-300">Load more</div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
